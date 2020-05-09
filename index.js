@@ -25,13 +25,13 @@ const questions = [{
     },
 ];
 
-let currentIndex = 0; //current question index
-let numberOfCorrect = 0; //number of correct answers
-let questionsLeft = 5; // total number of questions
+let currentIndex = 0;
+let numberOfCorrect = 0;
+let questionsLeft = 5;
 let selectedAnswer, correctAnswer, answerElement;
 let answered = false;
 
-//displays the current question
+// current question
 function displayQuestion(obj, index) {
     let answers = document.getElementById("answers");
     let questionContainer = document.getElementById("Currentquestion");
@@ -119,16 +119,16 @@ function resetgame() {
 
 
 
-let next = document.getElementById("next"); //next button selector
-let submitAnswer = document.getElementById("submit"); //submit button selector
-let numOfQuestions = document.getElementById("numOfQuestion"); //number of questions span selector
-let correctDisplay = document.getElementById("counter"); // number of correct answer span selector
-let span = document.getElementsByClassName("close")[0]; //modal close button selector
-let modal = document.getElementById("myModal"); // modal elemnent selector
-let modalContent = document.getElementById("modalContent"); //modal content selectore
-correctAnswer = getCorrectAnswer(questions, currentIndex); //stores the current questions correct answer
-displayQuestion(questions, currentIndex); //displays the first question
-numOfQuestions.textContent = questionsLeft; //displayes the questions left
+let next = document.getElementById("next");
+let submitAnswer = document.getElementById("submit");
+let numOfQuestions = document.getElementById("numOfQuestion");
+let correctDisplay = document.getElementById("counter");
+let span = document.getElementsByClassName("close")[0];
+let modal = document.getElementById("myModal");
+let modalContent = document.getElementById("modalContent");
+correctAnswer = getCorrectAnswer(questions, currentIndex);
+displayQuestion(questions, currentIndex);
+numOfQuestions.textContent = questionsLeft;
 span.onclick = function() {
     modal.style.display = "none";
 }

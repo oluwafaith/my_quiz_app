@@ -11,7 +11,7 @@
     width: 100%;
     padding: 30px;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-    background: rgb(255, 255, 255);
+    background: #b2ebf2;
     overflow: hidden;
     margin-bottom: 20px;
 }
@@ -39,19 +39,19 @@
 
 #questions p {
     font-size: 1.2em;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    border-bottom: 1px solid royal blue;
     padding: 10px;
     margin-bottom: 20px;
 }
 
 #questions li {
-    padding: 20px;
-    cursor: pointer;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 45px;
+    /* cursor: pointer; */
+    border-bottom: 1px solid royalblue;
 }
 
 #questions ul {
-    background: white;
+    background: whitesmoke;
     margin-bottom: 20px;
     border-radius: 0.3em;
 }
@@ -66,7 +66,7 @@
 
 #questions li.selected {
     color: white;
-    background: darkslategray;
+    background: royalblue;
 }
 
 #questions li.correct {
@@ -122,12 +122,6 @@
     list-style-type: square;
     margin: 15px;
 }
-
-
-/* 
-  MODAL
-  
-  */
 
 .modal {
     display: none;
