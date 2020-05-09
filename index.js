@@ -1,3 +1,4 @@
+//questions
 const questions = [{
         question: "what does hyper text markup language stand for?",
         correct_answer: "html",
@@ -43,7 +44,7 @@ function displayQuestion(obj, index) {
     questionContainer.textContent = obj[index].question;
 }
 
-//shuffles the position of the correct answer
+//correct answer1
 function shuffle(obj, index) {
     let array = [...obj[index].incorrect_answers, obj[index].correct_answer];
     const length = array.length;
@@ -62,12 +63,12 @@ function shuffle(obj, index) {
     return result;
 }
 
-//gets the correct answer from the question object
+//next answer
 function getCorrectAnswer(obj, index) {
     return obj[index].correct_answer;
 }
 
-//displays the list of options
+//choices
 function displayAnswers(arr) {
     let answerText = "";
     for (let item of arr) {
@@ -76,7 +77,7 @@ function displayAnswers(arr) {
     return answerText;
 }
 
-//gets the element the player selected
+//selected answers
 function selectAnswer() {
     let answersArr = [...document.getElementsByTagName("li")];
     for (let item of answersArr) {
@@ -88,7 +89,7 @@ function selectAnswer() {
     return event.target;
 }
 
-//display the correct answer
+//correct answer
 function displayCorrectAnswer(correctAnswer) {
     let answersArr = [...document.getElementsByTagName("li")];
     for (let item of answersArr) {
@@ -98,14 +99,14 @@ function displayCorrectAnswer(correctAnswer) {
     }
 }
 
-//gets the answer the player selected
+//answer2
 function getAnswer() {
     submitAnswer.classList.remove("disabled");
     answerElement = selectAnswer();
     selectedAnswer = answerElement.textContent;
 }
 
-//reset game and display player score
+//reset and score
 function resetgame() {
     correctDisplay.textContent = numberOfCorrect;
     modal.style.display = "block";

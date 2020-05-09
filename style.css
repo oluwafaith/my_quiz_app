@@ -5,6 +5,9 @@
     margin: 0;
     color: #37474f;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-transform: capitalize;
+    text-decoration: #01579b;
 }
 
 #top {
@@ -46,7 +49,6 @@
 
 #questions li {
     padding: 45px;
-    /* cursor: pointer; */
     border-bottom: 1px solid royalblue;
 }
 
