@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>quiz app</title>
+</head>
+
+<body>
+    <div>
+        <div id="top">
+            <h2>
+                A quiz app
+            </h2>
+            <p>
+                Number of Correct <span id="counter">0</span> | Questions left <span id="numOfQuestion">10</span>
+            </p>
+        </div>
+        <div id="questions">
+            <p id="Currentquestion">
+
+            </p>
+            <ul id="answers">
+
+            </ul>
+            <div id="buttons">
+                <button id="submit" class="disabled">Submit</button>
+                <button id="next" class="disabled">Next</button>
+            </div>
+        </div>
+
+    </div>
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close"><a href="index.html"> &times;</a></span>
+
+            <p id="modalContent"></p>
+
+            <p><a href="index.html">Go back</a></p>
+        </div>
+
+    </div>
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
